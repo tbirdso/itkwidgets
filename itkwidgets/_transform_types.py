@@ -316,6 +316,7 @@ def to_point_set(point_set_like):  # noqa: C901
         point_template = itk.template(points)
         element_type = point_template[1][1]
         # todo: test array_view here and below
+        print('Testing CI for compatibility')
         point_values = itk.PyVectorContainer[element_type].array_from_vector_container(
             points)
         if len(
